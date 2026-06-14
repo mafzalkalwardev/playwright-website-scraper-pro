@@ -1,5 +1,5 @@
 {
-  "name": "scraper",
+  "name": "@mafzalkalwardev/playwright-website-scraper-pro",
   "version": "1.0.0",
   "description": "",
   "main": "Scraper.js",
@@ -19,5 +19,12 @@
     "express": "^4.18.2",
     "fs-extra": "^11.3.5",
     "playwright": "^1.59.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mafzalkalwardev/playwright-website-scraper-pro.git"
   }
 }
