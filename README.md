@@ -39,3 +39,10 @@ Documented · MIT licensed · Maintained
 ## 🚀 Quick start
 
 Clone the repository and follow project-specific setup in docs.
+
+## Screenshots
+
+![playwright-website-scraper-pro dashboard](docs/screenshots/app.png)
+
+[Demo video](docs/screenshots/demo.webm)
+
