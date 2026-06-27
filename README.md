@@ -16,7 +16,7 @@ Documented · MIT licensed · Maintained
 
 ## Screenshots
 
-![Application screenshot](docs/screenshots/app.png)
+See the [portfolio demos page](https://mafzalkalwardev.github.io/demos.html). Run `npm start` locally and capture the GUI with demo URLs only.
 
 
 ## 🐍 Contribution graph
@@ -31,4 +31,23 @@ Documented · MIT licensed · Maintained
 
 ## 🚀 Quick start
 
-Clone the repository and follow project-specific setup in docs.
+```powershell
+git clone https://github.com/mafzalkalwardev/playwright-website-scraper-pro.git
+cd playwright-website-scraper-pro
+npm install
+npm start
+```
+
+Open the desktop GUI or API URL shown in the console (default Express server). See project docs for GUI and export options.
+
+---
+
+## Compliance and Responsible Use
+
+This project is intended for lawful research and automation on sites you are authorized to access. Respect website terms of service, robots.txt where applicable, rate limits, and copyright. Collect public data only; do not abuse credentials or bypass access controls.
+
+The maintainers are not responsible for misuse of this software.
+
+**Status:** Production-ready toolkit · use demo URLs for screenshots and recordings
+
+---
