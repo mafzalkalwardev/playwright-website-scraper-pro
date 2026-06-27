@@ -16,7 +16,9 @@ Documented · MIT licensed · Maintained
 
 ## Screenshots
 
-See the [portfolio demos page](https://mafzalkalwardev.github.io/demos.html). Run `npm start` locally and capture the GUI with demo URLs only.
+![Application screenshot](docs/screenshots/home.png)
+
+Run `npm start` locally and capture additional views using demo URLs only.
 
 
 ## 🐍 Contribution graph
