@@ -1,3 +1,4 @@
+const { requireIndusLicense } = require('./lib/indus_license');
 const express = require('express');
 const path = require('path');
 const { spawn } = require('child_process');
@@ -140,6 +141,7 @@ app.listen(PORT, () => {
   console.log(`Saving scraper data in ${DATA_ROOT}`);
   if (process.env.SCRAPER_OPEN_BROWSER === '1') openBrowser(url);
 });
+}).catch(err => { console.error(err.message || err); process.exit(1); });
 
 function openBrowser(url) {
   const command = process.platform === 'win32' ? 'cmd' : process.platform === 'darwin' ? 'open' : 'xdg-open';
