@@ -82,6 +82,25 @@ The maintainers are not responsible for misuse of this software.
 
 ---
 
+---
+
+## Case Study (Problem → Stack → Result)
+
+### Problem
+Clients needed website capture/cloning workflows with screenshots, assets, and multi-page export for redesigns, audits, and offline replicas.
+
+### Stack
+Playwright, Node.js/Express, desktop GUI, asset downloader, multi-page export
+
+### Result
+Built a scraper/clone toolkit that automates page walks, captures screenshots and assets, and exports structured project output for faster redesign and research work.
+
+**Audience:** Web agencies, redesign teams, researchers
+
+📄 Full write-up: [`CASE_STUDY.md`](./CASE_STUDY.md)
+
+**Hire / contact:** GitHub [@mafzalkalwardev](https://github.com/mafzalkalwardev) · LinkedIn [@mafzalkalwardev](https://www.linkedin.com/in/mafzalkalwardev) · WhatsApp [+92 307 9670503](https://wa.me/923079670503) · [Portfolio](https://mafzalkalwardev.github.io) · [Email](mailto:kalwarmuhammadafzal3@gmail.com)
+
 ## Discoverability
 
 **Author:** Muhammad Afzal Kalwar ([@mafzalkalwardev](https://github.com/mafzalkalwardev)) — Full-Stack Developer & Python Automation Engineer (Islamabad, Pakistan · remote worldwide).
