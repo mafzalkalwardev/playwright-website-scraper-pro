@@ -1,0 +1,53 @@
+name: Bug report
+description: Something in this repository does not work as the code describes
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for a defect in the current code. For a security issue, follow SECURITY.md and do not file it here.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of the repo is involved?
+      options:
+        - Express server (server.js or public/)
+        - Scrape engine (scraper_engine.js)
+        - Desktop app (desktop_app.py)
+        - License check (lib/indus_license.js)
+        - Apify Actor (apify-actor/)
+        - Windows build (scripts/build-exe.ps1)
+        - Docker or CI
+        - Docs
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+      description: Include the command you ran and the error text.
+      placeholder: INDUS_SKIP_LICENSE=1 npm start
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: input
+    id: runtime
+    attributes:
+      label: Runtime
+      description: Node.js version, and Python version if you used desktop_app.py.
+      placeholder: Node.js 20, Python 3.12
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshot
+      render: shell

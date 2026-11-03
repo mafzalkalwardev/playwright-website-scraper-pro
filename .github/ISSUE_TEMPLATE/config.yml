@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security
+    url: https://github.com/mafzalkalwardev/playwright-website-scraper-pro/blob/main/SECURITY.md
+    about: Report a vulnerability the way SECURITY.md describes. Do not open a public issue for it.
