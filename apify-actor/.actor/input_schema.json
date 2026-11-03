@@ -1,0 +1,94 @@
+{
+  "title": "Playwright Website Scraper",
+  "description": "Start from one or more URLs, follow an optional pagination selector, and extract named fields with CSS selectors. Turn screenshots on to store a full-page PNG for every crawled page.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "startUrls": {
+      "title": "Start URLs",
+      "type": "array",
+      "description": "Pages to open first. The crawler visits these URLs and, when a link selector is set, pages reached from them until Max pages is hit.",
+      "editor": "requestListSources",
+      "prefill": [
+        {
+          "url": "https://books.toscrape.com/"
+        }
+      ]
+    },
+    "maxPages": {
+      "title": "Max pages",
+      "type": "integer",
+      "description": "Maximum number of pages to open, including the start URLs. The run stops after this many page loads.",
+      "minimum": 1,
+      "maximum": 10000,
+      "default": 10,
+      "prefill": 2
+    },
+    "fields": {
+      "title": "Fields",
+      "type": "array",
+      "description": "Named CSS selectors to extract. When Item selector is set, each selector is evaluated inside every matching element. Otherwise selectors are evaluated on the whole page. Leave Attribute empty to read visible text. You can also pass a selectors object via the API, mapping a field name to a CSS selector string or to { \"selector\", \"attribute\" }.",
+      "editor": "schemaBased",
+      "prefill": [
+        {
+          "name": "title",
+          "selector": "h3 a",
+          "attribute": "title"
+        },
+        {
+          "name": "price",
+          "selector": ".price_color"
+        },
+        {
+          "name": "availability",
+          "selector": ".availability"
+        }
+      ],
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Field name",
+            "type": "string",
+            "description": "Property name written to the dataset, for example title or price.",
+            "editor": "textfield"
+          },
+          "selector": {
+            "title": "CSS selector",
+            "type": "string",
+            "description": "CSS selector for this field.",
+            "editor": "textfield"
+          },
+          "attribute": {
+            "title": "Attribute",
+            "type": "string",
+            "description": "Optional element attribute to read, such as href, src, or title. Leave empty to use the element's text.",
+            "editor": "textfield"
+          }
+        },
+        "required": ["name", "selector"]
+      }
+    },
+    "itemSelector": {
+      "title": "Item selector",
+      "type": "string",
+      "description": "Optional CSS selector for a repeating block (a product card, a row, a listing). Each match becomes its own dataset item. Leave empty to save one item per page.",
+      "editor": "textfield",
+      "prefill": "article.product_pod"
+    },
+    "linkSelector": {
+      "title": "Link selector",
+      "type": "string",
+      "description": "Optional CSS selector for links to enqueue, such as a pagination control. Only links on the same hostname are followed. Leave empty to open the start URLs only.",
+      "editor": "textfield",
+      "prefill": "li.next a"
+    },
+    "saveScreenshots": {
+      "title": "Save screenshots",
+      "type": "boolean",
+      "description": "Store a full-page PNG screenshot of each crawled page in the key-value store and add its key to every dataset item from that page.",
+      "default": false
+    }
+  },
+  "required": ["startUrls"]
+}

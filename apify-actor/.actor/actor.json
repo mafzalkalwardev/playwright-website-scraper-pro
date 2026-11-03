@@ -1,0 +1,15 @@
+{
+  "actorSpecification": 1,
+  "name": "playwright-website-scraper",
+  "title": "Playwright Website Scraper",
+  "description": "Crawl pages with Playwright and extract structured fields using CSS selectors. Optionally save a full-page screenshot of each page.",
+  "version": "1.0",
+  "meta": {
+    "templateId": "js-crawlee-playwright"
+  },
+  "inputSchema": "./input_schema.json",
+  "dockerfile": "../Dockerfile",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  }
+}

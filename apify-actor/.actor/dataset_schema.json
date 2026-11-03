@@ -1,0 +1,51 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "type": "object",
+    "properties": {
+      "url": {
+        "type": "string",
+        "title": "Page URL"
+      },
+      "pageTitle": {
+        "type": "string",
+        "title": "Page title"
+      },
+      "title": {
+        "type": "string",
+        "title": "Title"
+      },
+      "price": {
+        "type": "string",
+        "title": "Price"
+      },
+      "availability": {
+        "type": "string",
+        "title": "Availability"
+      },
+      "screenshotKey": {
+        "type": "string",
+        "title": "Screenshot key"
+      }
+    }
+  },
+  "views": {
+    "overview": {
+      "title": "Overview",
+      "transformation": {
+        "fields": ["title", "price", "availability", "url", "pageTitle", "screenshotKey"]
+      },
+      "display": {
+        "componentDisplay": "table",
+        "properties": {
+          "title": { "label": "Title" },
+          "price": { "label": "Price" },
+          "availability": { "label": "Availability" },
+          "url": { "label": "Page URL", "format": "link" },
+          "pageTitle": { "label": "Page title" },
+          "screenshotKey": { "label": "Screenshot key" }
+        }
+      }
+    }
+  }
+}
