@@ -1,0 +1,37 @@
+name: Feature request
+description: Suggest a change that fits the scraper, the desktop app, or the Apify Actor
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the change you want. Keep it to something this repo can do for pages the operator is allowed to access.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Express server (server.js or public/)
+        - Scrape engine (scraper_engine.js)
+        - Desktop app (desktop_app.py)
+        - Apify Actor (apify-actor/)
+        - Docs or contributor experience
+        - CI, Docker, or packaging
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is awkward or missing when you use the project today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What should change, and which file or folder would it touch?
+    validations:
+      required: true

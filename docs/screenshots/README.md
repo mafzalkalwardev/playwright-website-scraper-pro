@@ -1,6 +1,10 @@
 # Screenshots
 
-Add PNG or JPG captures of the application here, then update the main README:
+`books-toscrape.png` is the full-page PNG the Apify Actor wrote for `https://books.toscrape.com/` with `saveScreenshots` enabled (key `SCREENSHOT-3060d727707e.png`).
+
+`home.png` is the Express UI from `public/index.html`. `app.png` is the Tkinter window in `desktop_app.py`.
+
+Add further PNG or JPG captures of the application here, then update the main README:
 
 ```markdown
 ## Screenshots
