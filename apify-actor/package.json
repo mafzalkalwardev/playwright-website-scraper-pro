@@ -1,0 +1,20 @@
+{
+  "name": "playwright-website-scraper-actor",
+  "version": "1.0.0",
+  "description": "Apify Actor that crawls pages with Playwright and extracts fields by CSS selector.",
+  "type": "module",
+  "main": "src/main.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "dependencies": {
+    "@crawlee/playwright": "^3.18.2",
+    "apify": "^3.7.2",
+    "playwright": "1.64.1"
+  },
+  "author": "Muhammad Afzal Kalwar",
+  "license": "MIT"
+}

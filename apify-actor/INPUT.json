@@ -1,0 +1,14 @@
+{
+  "startUrls": [
+    { "url": "https://books.toscrape.com/" }
+  ],
+  "maxPages": 2,
+  "itemSelector": "article.product_pod",
+  "linkSelector": "li.next a",
+  "fields": [
+    { "name": "title", "selector": "h3 a", "attribute": "title" },
+    { "name": "price", "selector": ".price_color" },
+    { "name": "availability", "selector": ".availability" }
+  ],
+  "saveScreenshots": false
+}
