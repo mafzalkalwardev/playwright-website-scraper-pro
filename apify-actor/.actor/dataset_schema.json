@@ -36,7 +36,7 @@
         "fields": ["title", "price", "availability", "url", "pageTitle", "screenshotKey"]
       },
       "display": {
-        "componentDisplay": "table",
+        "component": "table",
         "properties": {
           "title": { "label": "Title" },
           "price": { "label": "Price" },
