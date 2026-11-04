@@ -24,7 +24,7 @@ app.post('/start', (req, res) => {
   const startUrl = normalizeUrl(req.body && req.body.url);
   if (!startUrl) return res.status(400).json({ error: 'Enter a valid http or https URL' });
 
-  const scraperPath = path.join(__dirname, 'Scraper.js');
+  const scraperPath = path.join(__dirname, 'scraper_engine.js');
   child = spawn(process.execPath, [scraperPath, startUrl], {
     cwd: __dirname,
     env: {

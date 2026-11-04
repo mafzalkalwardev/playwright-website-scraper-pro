@@ -2,7 +2,7 @@
   "name": "@mafzalkalwardev/playwright-website-scraper-pro",
   "version": "1.0.0",
   "description": "",
-  "main": "Scraper.js",
+  "main": "scraper_engine.js",
   "scripts": {
     "app": "python app.py",
     "start": "node server.js",
