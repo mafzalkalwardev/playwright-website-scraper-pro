@@ -1,0 +1,13 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "Playwright Website Scraper output",
+  "description": "Extracted items stored in the default dataset. The overview view is selected by default.",
+  "properties": {
+    "results": {
+      "type": "string",
+      "title": "Results",
+      "description": "Dataset items for each crawled page or repeating element, displayed with the overview view.",
+      "template": "{{links.apiDefaultDatasetUrl}}/items?view=overview"
+    }
+  }
+}
