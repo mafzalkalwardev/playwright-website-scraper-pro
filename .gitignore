@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local scraper output
+downloaded_site/
+browser_profile/
+browser-downloads/
+data/
+
+# License files are local, not committed
+indus-license*.json
+
+# Logs
+*.log
+server.out.log
+server.err.log
+server.combined.log
+
+# Build output
+release/
+payload.zip
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
