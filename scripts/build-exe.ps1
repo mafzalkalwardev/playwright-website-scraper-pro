@@ -32,7 +32,8 @@ Copy-Item -LiteralPath $nodePath -Destination (Join-Path $stagePath "node.exe") 
 Copy-Item -LiteralPath (Join-Path $root "package.json") -Destination $stagePath -Force
 Copy-Item -LiteralPath (Join-Path $root "package-lock.json") -Destination $stagePath -Force
 Copy-Item -LiteralPath (Join-Path $root "server.js") -Destination $stagePath -Force
-Copy-Item -LiteralPath (Join-Path $root "Scraper.js") -Destination $stagePath -Force
+Copy-Item -LiteralPath (Join-Path $root "scraper_engine.js") -Destination $stagePath -Force
+Copy-Item -LiteralPath (Join-Path $root "lib") -Destination (Join-Path $stagePath "lib") -Recurse -Force
 Copy-Item -LiteralPath (Join-Path $root "public") -Destination (Join-Path $stagePath "public") -Recurse -Force
 Copy-Item -LiteralPath (Join-Path $root "node_modules") -Destination (Join-Path $stagePath "node_modules") -Recurse -Force
 Copy-Item -LiteralPath $browserPath -Destination (Join-Path $stagePath "ms-playwright") -Recurse -Force

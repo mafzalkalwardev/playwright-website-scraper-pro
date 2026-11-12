@@ -10,7 +10,7 @@ from tkinter import filedialog, messagebox, ttk
 
 
 ROOT = Path(__file__).resolve().parent
-SCRAPER = ROOT / "Scraper.js"
+SCRAPER = ROOT / "scraper_engine.js"
 
 
 class ScraperApp(tk.Tk):

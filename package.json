@@ -2,9 +2,9 @@
   "name": "@mafzalkalwardev/playwright-website-scraper-pro",
   "version": "1.0.0",
   "description": "",
-  "main": "Scraper.js",
+  "main": "scraper_engine.js",
   "scripts": {
-    "app": "python app.py",
+    "app": "python desktop_app.py",
     "start": "node server.js",
     "build:exe": "powershell -ExecutionPolicy Bypass -File scripts/build-exe.ps1",
     "postinstall": "npx playwright install",
@@ -12,7 +12,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "axios": "^1.16.0",
     "cheerio": "^1.2.0",

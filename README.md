@@ -91,11 +91,7 @@ Books to Scrape, the host used for the screenshot, labels itself a demo site for
 
 ## Current limits
 
-These match the tree today:
-
-- `server.js`, `desktop_app.py`, `scripts/build-exe.ps1`, and `package.json` `"main"` refer to `Scraper.js`. The engine source in the repo is `scraper_engine.js`.
-- `node scraper_engine.js <url>` exits with `ERR_AMBIGUOUS_MODULE_SYNTAX` because the file calls `require()` and also has a top-level `await requireIndusLicense(...)`.
-- `npm run app` runs `python app.py`. That file is not in the repo. The GUI source is `desktop_app.py`.
+- The Apify Actor is a separate package and is not covered by the root `npm test` script beyond a syntax check.
 
 ## Contributing
 

@@ -26,8 +26,8 @@ main().catch(async (err) => {
   await shutdown(1);
 });
 
-  await requireIndusLicense(__dirname);
 async function main() {
+  await requireIndusLicense(__dirname);
   if (!isHttpUrl(startUrl)) throw new Error('A valid http or https URL is required.');
 
   await fs.ensureDir(OUTPUT_DIR);
